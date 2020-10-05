@@ -1,1 +1,8 @@
-<?php include_once("home.html"); ?>
+<?php include_once("home.html"); 
+
+add_action( 'wp_enqueue_scripts', 'enqueue_font_awesome' );
+function enqueue_font_awesome() {
+
+    wp_enqueue_style( 'font-awesome', '//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' );
+
+?>
